@@ -11,11 +11,60 @@
  *
  * @package pollycon
  */
-
 get_header();
 ?>
 
-<section class="flex flex-wrap p-4 h-full items-center">
+<section class="container mx-auto px-6 pt-0 mb-10 md:py-10">
+	<div class="flex flex-col-reverse md:grid md:grid-cols-12 pt-40">
+		<div class="col-span-8 md:col-span-6">
+			<div class="about-content-swiper swiper cursor-pointer">
+				<div class="swiper-wrapper">
+					<div class='swiper-slide'>
+						<h4 class='mt-10 font-cormorant text-xl'>About Me</h4>
+						<h2 class="mt-4 max-w-lg font-outfit font-bold text-4xl text-neutral-900 dark:text-white" data-sal="slide-up" data-sal-delay="350">Married to Lucy</h2>
+						<p class="mt-4 max-w-lg mb-20 md:mb-0 font-light text-base text-neutral-900 dark:text-white" data-sal="slide-up" data-sal-delay="650">
+						As cliche as it sounds, we we childhood sweethearts, we just didn't know it until our twenties. Married since 2021, we have been through a lot together and I couldn't be happier to be by her side.
+						</p>
+					</div>
+					<div class='swiper-slide'>
+						<h4 class='mt-10 font-cormorant text-xl'>About Me</h4>
+						<h2 class="mt-4 max-w-lg font-outfit font-bold text-4xl text-neutral-900 dark:text-white" data-sal="slide-up" data-sal-delay="350">Father to Emily, Poppy and Conor</h2>
+						<p class="mt-4 max-w-lg mb-20 md:mb-0 font-light text-base text-neutral-900 dark:text-white" data-sal="slide-up" data-sal-delay="650">
+						I know for a fact that if it wasn't for my kids I wouldn't be where I am today. They are my rock and my inspiration. I love spending time with them and watching them grow.
+						</p>
+					</div>
+					<div class='swiper-slide'>
+						<h4 class='mt-10 font-cormorant text-xl'>About Me</h4>
+						<h2 class="mt-4 max-w-lg font-outfit font-bold text-4xl text-neutral-900 dark:text-white" data-sal="slide-up" data-sal-delay="350">Dog and Cat Dad to Link and Zelda</h2>
+						<p class="mt-4 max-w-lg mb-20 md:mb-0 font-light text-base text-neutral-900 dark:text-white" data-sal="slide-up" data-sal-delay="650">
+						50% of the time they're fighting, 50% of the time they're sleeping and I won't go into detail on where their names came from.
+						</p>
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</div>
+		<div class="col-span-12 md:col-span-6">
+			<div class="about-card-swiper swiper overflow-visible">
+				<div class="swiper-wrapper">
+					<div class='swiper-slide p-4'>
+						<img src="<?= get_template_directory_uri() ?>/img/jamie-lucy.webp" alt="Jamie and Lucy">
+					</div>
+					<div class='swiper-slide p-4'>
+						<img src="<?= get_template_directory_uri() ?>/img/jamie-kids.webp" alt="Jamie and Lucy">
+					</div>
+					<div class='swiper-slide p-4'>
+						<img src="<?= get_template_directory_uri() ?>/img/zelda-link.webp" alt="Jamie and Lucy">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- TO DO - Modal -->
+<section class="flex flex-wrap p-4 h-full items-center hidden">
 
 	<button type="button" class="bg-transparent border border-gray-500 hover:border-indigo-500 text-gray-500 hover:text-indigo-500 font-bold py-2 px-4 rounded-full" @click="showModal = true">Open modal</button>
 

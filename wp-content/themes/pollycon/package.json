@@ -49,6 +49,8 @@
 	},
 	"prettier": "@wordpress/prettier-config",
 	"dependencies": {
-		"alpinejs": "^3.12.2"
+		"alpinejs": "^3.12.2",
+		"sal.js": "^0.8.5",
+		"swiper": "^9.3.2"
 	}
 }

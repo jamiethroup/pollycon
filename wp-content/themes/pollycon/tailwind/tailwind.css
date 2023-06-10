@@ -35,3 +35,10 @@
  */
 @import "tailwindcss/utilities";
 @import "./custom/utilities.css";
+
+
+/**
+ * This injects Tailwind's utility classes and any utility classes registered
+ * by plugins, then adds custom utility classes.
+ */
+ @import "tailwindcss/utilities";

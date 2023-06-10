@@ -22,7 +22,7 @@
 	@apply max-w-content mx-auto mb-6 text-3xl font-extrabold text-neutral-900;
 }
 
-/**
+/** 
  * Layout styles for centered content areas
  *
  * If you are controlling the width of your content area with styles applied

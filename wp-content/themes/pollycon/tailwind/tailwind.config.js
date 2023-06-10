@@ -13,7 +13,22 @@ module.exports = {
 	],
 	theme: {
 		// Extend the default Tailwind theme.
-		extend: {},
+		
+    extend: {
+      keyframes: {
+        wave: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' },
+        }
+      },
+      animation: {
+        wave: 'wave 1s ease-in-out infinite',
+      },
+      fontFamily: {
+				'outfit': ['Outfit', 'sans-serif'], 
+				'cormorant': ['Cormorant Upright', 'serif'],
+      },
+    },
 	},
 	corePlugins: {
 		// Disable Preflight base styles in builds targeting the editor.
@@ -24,11 +39,10 @@ module.exports = {
 		require('@_tw/themejson')(require('../theme/theme.json')),
 
 		// Add Tailwind Typography.
-		require('@tailwindcss/typography'),
-
 		// Uncomment below to add additional first-party Tailwind plugins.
-		// require('@tailwindcss/forms'),
-		// require('@tailwindcss/aspect-ratio'),
-		// require('@tailwindcss/container-queries'),
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/aspect-ratio'),
+		require('@tailwindcss/container-queries'),
 	],
 };
