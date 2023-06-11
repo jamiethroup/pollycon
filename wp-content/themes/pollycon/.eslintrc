@@ -36,7 +36,7 @@
 				"tailwindcss/no-custom-classname": [
 					"warn",
 					{
-						"config": "./tailwind/tailwind.config.js",
+						"config": "/tailwind/tailwind.config.js",
 						"whitelist": [
 							"(page|entry|comment)\\-([-a-z]*)",
 							"vcard"
@@ -46,7 +46,7 @@
 			},
 			"settings": {
 				"tailwindcss": {
-					"config": "./tailwind/tailwind.config.js",
+					"config": "/tailwind/tailwind.config.js",
 					"cssFiles": [
 						"./theme/**/*.css"
 					]
