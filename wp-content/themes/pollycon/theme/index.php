@@ -13,6 +13,168 @@
  */
 get_header();
 ?>
+
+
+<section class="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20">
+      <div class="grid grid-cols-12">
+        <div class="col-span-12 md:col-start-2 md:col-end-12">
+          <h5  
+          class='font-outfit uppercase font-medium  tracking-wide'
+          data-sal="slide-up"
+          data-sal-delay="200"
+          data-sal-duration="500"
+          data-sal-easing="ease-out-back"
+          >
+            How I help
+          </h5>
+          <h3 
+          class='text-gray-800 text-4xl md:text-5xl mt-4 max-w-5xl my-20'
+          data-sal="slide-up"
+          data-sal-delay="700"
+          data-sal-duration="500"
+          data-sal-easing="ease-out-back"
+          >
+            Throughout my career, I&rsquo;ve honed my skills to allow me to create interactive web experiences that are both modern and focused on speed.
+          </h3>
+        </div>
+      </div>
+        <div class="project-block px-6 md:px-0 py-10 md:py-40 flex flex-col md:grid md:grid-cols-12 md:gap-10" key={i}>
+        <div class=" image">
+          <figure
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-duration="500"
+            data-sal-easing="ease-out-back"
+          >
+					IMG
+          </figure>
+        </div>
+          <div
+            class="text"
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-duration="500"
+            data-sal-easing="ease-out-back"
+          >
+          <span>
+            <span class='rounded-pill'>{tag}</span>
+          </span>
+            <h4>Lou Lou Images</h4>
+            <p class='font-outfit text-base max-w-sm leading-normal mt-4 font-light text-neutral-500'>
+							Text
+						</p>
+          </div>
+        </div>
+    </section>
+
+
+<section class="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pb-20">
+	<div class='px-6 py-20 md:px-0 grid md:grid-cols-12 md:gap-10'>
+		<div class="col-span-12 text-center">
+			<h5 
+			class='font-outfit uppercase font-light tracking-wide'
+			data-sal="slide-up"
+			data-sal-delay="200"
+			data-sal-duration="500"
+			data-sal-easing="ease-out-back"
+			>
+				Other Clients
+			</h5>
+			<h3 
+			class='text-gray-800 text-3xl mt-4 mx-auto mb-20'
+			data-sal="slide-up"
+			data-sal-delay="700"
+			data-sal-duration="500"
+			data-sal-easing="ease-out-back"
+			>
+			That I&rsquo;ve worked with during my career
+			</h3>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="100"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="500"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="100"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="500"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="100"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+		<div class="col-span-6 md:col-span-3">
+				<figure
+					data-sal="slide-up"
+					data-sal-delay="300"
+					data-sal-duration="200"
+					data-sal-easing="ease-out-back"
+				>
+				<img src="<?= get_template_directory_uri() ?>/img/clients/beis.webp" alt="Jamie and Lucy">
+				</figure>
+		</div>
+	</div>
+</section>
+
+
+
 <section class="container mx-auto max-w-6xl px-6pt-0 mb-10 md:pt-40 md:pb-20">
 	<div class="col-span-12 md:col-start-2 md:col-end-12">
 		<h5 class="font-outfit uppercase font-medium tracking-wide" data-sal="slide-up" data-sal-delay="200"

@@ -10,11 +10,31 @@ import Alpine from 'alpinejs'
 import sal from 'sal.js'
 import Swiper, { Navigation, Controller, EffectCards, EffectFade } from 'swiper';
 import 'swiper/css/navigation';
- 
 window.Alpine = Alpine
  
-Alpine.start()
-sal();  
+
+
+init();
+
+function init() {
+  Alpine.start()
+  sal();
+  colorSchemeChecker();
+}
+
+function colorSchemeChecker() {
+  const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const colorScheme = localStorage.getItem('colorScheme');
+  if (colorScheme) {
+    if (darkModeMediaQuery.matches && colorScheme === 'dark') {
+      localStorage.setItem('colorScheme', 'dark');
+      document.body.classList.add('dark');
+    } else {
+      localStorage.setItem('colorScheme', 'light');
+      document.body.classList.remove('dark');
+    }
+  }
+}
 
 // DOMContentLoaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Variables
     const footer = document.querySelector('footer');
     const handler = (entries) => {
-      (!entries[0].isIntersecting) ? document.body.classList.remove('dark') : document.body.classList.add('dark');
+      (!entries[0].isIntersecting) ? document.body.classList.remove('footer-in-view') : document.body.classList.add('footer-in-view');
     }
     const observer = new window.IntersectionObserver(handler)
     observer.observe(footer)
