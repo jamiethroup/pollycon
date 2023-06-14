@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container mx-auto my-8">
+<div class="">
 
 	<?php if ( have_posts() ) : ?>
 		<?php
@@ -8,42 +8,20 @@
 			the_post();
 			?>
 
-
-
-<section class="container mx-auto px-6 max-w-7xl pt-0 mb-10 md:pt-40 md:pb-20">
-      <div class="grid grid-cols-12">
-        <div class="col-span-12 md:col-start-2 md:col-end-12">
-          <h5  
-          class='font-outfit uppercase font-medium  tracking-wide'
-          data-sal="slide-up"
-          data-sal-delay="200"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
-          >
-            How I help
-          </h5>
-          <h3 
-          class='text-gray-800 text-4xl md:text-5xl mt-4 max-w-5xl my-20'
-          data-sal="slide-up"
-          data-sal-delay="700"
-          data-sal-duration="500"
-          data-sal-easing="ease-out-back"
-          >
-            Throughout my career, I&rsquo;ve honed my skills to allow me to create interactive web experiences that are both modern and focused on speed.
-          </h3>
-        </div>
-      </div>
-        <div class="project-block px-6 md:px-0 py-10 md:py-40 flex flex-col md:grid md:grid-cols-12 md:gap-10" key={i}>
-        <div class=" image">
-          <figure
-            data-sal="slide-up"
-            data-sal-delay="200"
-            data-sal-duration="500"
-            data-sal-easing="ease-out-back"
-          >
-					IMG
-          </figure>
-        </div>
+<?php get_template_part( 'template-parts/acf', 'hero' ); ?>
+<?php get_template_part( 'template-parts/acf', 'introduction' ); ?>
+<section class="container mx-auto px-6 max-w-7xl pt-0 mb-10">
+        <div class="project-block px-6 md:px-0 py-10 md:py-40 flex flex-col md:grid md:grid-cols-12 md:gap-10">
+					<div class=" image">
+						<figure
+							data-sal="slide-up"
+							data-sal-delay="200"
+							data-sal-duration="500"
+							data-sal-easing="ease-out-back"
+						>
+						<img src="<?= get_template_directory_uri() ?>/img/loulouimages.png" alt="Jamie and Lucy">
+						</figure>
+					</div>
           <div
             class="text"
             data-sal="slide-up"
@@ -52,11 +30,38 @@
             data-sal-easing="ease-out-back"
           >
           <span>
-            <span class='rounded-pill'>{tag}</span>
+            <span class='rounded-pill'>Development</span>
           </span>
             <h4>Lou Lou Images</h4>
             <p class='font-outfit text-base max-w-sm leading-normal mt-4 font-light text-neutral-500'>
-							Text
+						Creating an unique design for a Birmingham based studio
+						</p>
+          </div>
+        </div>
+        <div class="project-block px-6 md:px-0 py-10 md:py-40 flex flex-col md:grid md:grid-cols-12 md:gap-10">
+					<div class=" image">
+						<figure
+							data-sal="slide-up"
+							data-sal-delay="200"
+							data-sal-duration="500"
+							data-sal-easing="ease-out-back"
+						>
+						<img src="<?= get_template_directory_uri() ?>/img/loulouimages.png" alt="Jamie and Lucy">
+						</figure>
+					</div>
+          <div
+            class="text"
+            data-sal="slide-up"
+            data-sal-delay="200"
+            data-sal-duration="500"
+            data-sal-easing="ease-out-back"
+          >
+          <span>
+            <span class='rounded-pill'>Development</span>
+          </span>
+            <h4>Lou Lou Images</h4>
+            <p class='font-outfit text-base max-w-sm leading-normal mt-4 font-light text-neutral-500'>
+						Creating an unique design for a Birmingham based studio
 						</p>
           </div>
         </div>
@@ -170,15 +175,6 @@
 
 
 
-<section class="container mx-auto max-w-6xl px-6pt-0 mb-10 md:pt-40 md:pb-20">
-	<div class="col-span-12 md:col-start-2 md:col-end-12">
-		<h5 class="font-outfit uppercase font-medium tracking-wide" data-sal="slide-up" data-sal-delay="200"
-			data-sal-duration="500" data-sal-easing="ease-out-back">How I help</h5>
-		<h3 class="text-gray-800 text-4xl md:text-5xl mt-4 max-w-5xl my-20 font-cormorant dark:text-white" data-sal="slide-up"
-			data-sal-delay="700" data-sal-duration="500" data-sal-easing="ease-out-back">Throughout my career, I’ve honed my
-			skills to allow me to create interactive web experiences that are both modern and focused on speed.</h3>
-	</div>
-</section>
 <section class="container mx-auto px-6 pt-0 mb-10 md:py-10">
 	<div class="flex flex-col-reverse md:grid md:grid-cols-12 pt-40">
 		<div class="col-span-8 md:col-span-6">

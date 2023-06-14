@@ -72,3 +72,18 @@ window.addEventListener('load', function () {
             main_navigation.classList.toggle('hidden');
       });
 });
+
+class ToggleSwitch extends HTMLElement {
+  constructor() {
+    super();
+    this.input = this.querySelector('.theme__toggle');
+    this.input?.addEventListener('click', this.toggle.bind(this));
+  }
+  toggle() {
+    this.input.checked ? console.log('Checked') : console.log('Unchecked');
+  }
+}
+
+customElements.define('theme-toggle', ToggleSwitch);
+
+
